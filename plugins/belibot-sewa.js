@@ -1,6 +1,6 @@
 let fetch = require('node-fetch') 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-let gh = 'https://github.com/LynnXzy'
+let gh = 'https://github.com/BOTCAHX'
   let buttonMessage= {
 'document':{'url':gh},
 'mimetype':'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
@@ -14,11 +14,11 @@ let gh = 'https://github.com/LynnXzy'
 'mediaType':2,
 'previewType':'pdf',
 'title':'Follow Github Gua',
-'body':'© Lynn-MD',
+'body':'© Lynn-Md',
 'thumbnail':await(await fetch('https://telegra.ph/file/f4063ab3071f5c4af765a.png')).buffer(),
 'sourceUrl':gh}},
-'caption':'Hi, Silahkan pilih opsi di bawah ini.\n*Payment*\n\n*x* Digi: 60149431385\n*x* Maxis: 60147675746',
-'footer':'©Lynn-Md
+'caption':'Hi, Silahkan pilih opsi di bawah ini.\n*Payment*\n\n*x* Dana: 082221792667\n*x* Pulsa: 082221792667',
+'footer':'©TioXd',
 'buttons':[
 {'buttonId':'.menu','buttonText':{'displayText':'ᴍᴇɴᴜ'},'type':1},
 {'buttonId':'.donasi','buttonText':{'displayText':'ᴅᴏɴᴀsɪ'},'type':1}
