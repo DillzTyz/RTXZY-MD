@@ -15,7 +15,13 @@ Berapapun donasi kalian akan sangat berarti 👍
 
 Terimakasih =D
 
-Contact person Owner:
+Group bot 1✨
+https://chat.whatsapp.com/EheAWPrQMhV25xW0N7l7WD
+
+Group bot 2✨
+https://chat.whatsapp.com/GzDQlgoUamS5Ok4EOcYRRB
+
+Contact person Owner👤:
 wa.me/${numberowner} (Owner)
 
 *donasi via follow ig juga boleh*`
