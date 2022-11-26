@@ -19,7 +19,7 @@ key: {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": fs.readFileSync('./media/thumbnail.jpg') //Gambarnya
 					},
-					"title": wm, //Kasih namalu 
+					"title": Lynn, //Kasih namalu 
 					"description": "LynnXzy", 
 					"currencyCode": "USD",
 					"priceAmount1000": "2000",
@@ -40,7 +40,7 @@ global.ftroli = {
                             itemCount : 1,
                             status: 1,
                             surface : 1,
-                            message: wm, //Kasih namalu
+                            message: Lynn, //Kasih namalu
                             orderTitle: 'Bang',
                             thumbnail: fs.readFileSync('./media/thumbnail.jpg'), //Gambarnya
                             sellerJid: '0@s.whatsapp.net'
