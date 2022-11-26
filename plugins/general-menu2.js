@@ -180,7 +180,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-let gh = 'https://github.com/BOTCAHX'
+let gh = 'https://github.com/LynnXzy'
 let fb = 'https://www.facebook.com/tio.permana.50999'
   let buttonMessage= {
 'document':{'url':gh},
