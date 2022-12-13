@@ -1,17 +1,40 @@
-/**Coba aja dlu gua bingung mau pake scraper suka error makanya 
-Coba pake apikey malesin dlu wkwk**/
+let fg = require('api-dylux')
+const { tiktokdl, tiktokdlv2, tiktokdlv3 } = require ('@bochilteam/scraper')
 
-let https = require('axios')
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-if (!args[0]) throw `contoh:\n ${usedPrefix}${command} https://vm.tiktok.com/ZGJAmhSrp/`
-let tio = (await https.get(API('males', '/tiktok', { url: args[0] } ))).data;
-if (tio.status != 200) throw tio.message;
-if (!tio) throw tio.message;
- let hasilnya = `*Title:* ${tio.title}\n\n*Author:* ${tio.author}`
-  conn.sendButtonVid(m.chat, tio.video, hasilnya, wm, `Back`, `.menu`, m)
-        }
-handler.help = ['tiktok'].map(v => v + ' <url>')
+let handler = async (m, { conn, text, args, usedPrefix, command}) => {
+if (!args[0]) throw `✳️ Masukkan tautan Tiktok\n\n 📌 Contoh: ${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`
+if (!args[0].match(/tiktok/gi)) throw `❎ Periksa apakah tautannya dari tiktok`
+
+try {
+    let p = await fg.tiktok(args[0]) 
+    let te = `
+┌─⊷ SERVER 1
+▢ *Username:* ${p.author}
+▢ *Descripción:* ${p.title}
+└───────────`
+    
+    conn.sendFile(m.chat, p.nowm, 'tt.mp4', te, m)
+    } catch {  	
+    try { 
+	const { author: { nickname }, video, description } = await tiktokdl(args[0])
+         .catch(async _ => await tiktokdlv2(args[0]))
+         .catch(async _ => await tiktokdlv3(args[0]))
+    const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
+    if (!url) throw '❎ Kesalahan mengunduh video'
+    let tex = `
+┌─⊷ SERVER 2 
+▢ *Nickname:* ${nickname} ${description ? `\n▢ *Descripción:* ${description}` : ''}
+└───────────`
+conn.sendFile(m.chat, url, 'tt.mp4', tex, m)
+} catch {
+    m.reply(`❎ Kesalahan mengunduh video `)
+}
+} 
+    
+}  
+handler.help = ['tiktok']
 handler.tags = ['downloader']
-handler.command = /^(tiktok|ttdl|tt|tiktokdl|tiktoknowm)$/i
+handler.command = /^(tiktok|ttdl|tiktokdl|tiktoknowm|tt|tiktod|dltt)$/i
 handler.limit = true
+
 module.exports = handler
