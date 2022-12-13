@@ -13,28 +13,43 @@ Agar terap bisa di gunakan dan tidak ada kendala seperti
     let uptime = clockString(_uptime)
     let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
     let ar = ['list', 'menu']
-    let title = `*© Lynn-Md🌱✨*`
+    let title = `✧────────···[ Dashboard ]···─────────✧`
     let tmb = `CLICK HERE ⎙`
     const sections = [ {
 	title: `Aktif Selama ${uptime} || Waktu ${time} WIB`,
 	rows: [
-	{title: `Semua Perintah`, rowId: `.allmenu `},//, description: ``},
-        {title: `MenuV2`, rowId: `.pay `},//, description: ``},
-        {title: `Donasi`, rowId: `#donasi `},//, description: ``},
-        {title: `Script`, rowId: `#sc `},//, description: ``},
-        {title: `Group Official`, rowId: `#gcbot `},//, description: ``},
-        {title: `Website Official`, rowId: `#web `},//, description: ``},
-        {title: `Speed`, rowId: `#speed `},//, description: ``},
-        {title: `List Texpro Maker`, rowId: `#textpro `},//, description: ``},
-        {title: `Info`, rowId: `#info `},//, description: ``},
-        {title: `Creator`, rowId: `#owner `},//, description: ``},
+	{title: `Semua Perintah[📄]`, rowId: `.allmenu `},//, description: ``},
+        {title: `MenuV2[📃]`, rowId: `.pay `},//, description: ``},
+        {title: `Donasi[💰]`, rowId: `#donasi `},//, description: ``},
+        {title: `Script[⚙️]`, rowId: `#sc `},//, description: ``},
+        {title: `Group Official[🌱]`, rowId: `#gcbot `},//, description: ``},
+        {title: `Website Official[💻]`, rowId: `#web `},//, description: ``},
+        {title: `Speed[⚡]`, rowId: `#speed `},//, description: ``},
+        {title: `List Texpro Maker[📝]`, rowId: `#textpro `},//, description: ``},
+        {title: `Info[🛠️]`, rowId: `#info `},//, description: ``},
+        {title: `Creator[👤]`, rowId: `#owner `},//, description: ``},
         ]
  } ]
 
 const listMessage = {
   text: title,
   mentions: [m.sender],
-  footer: '📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner',
+  footer: '╭━━━━━━━━━━━━━━━━┈─✧
+┴
+│⬡ Aktif selama ${uptime}
+│⬡ Prefix : [#]
+│⬡ *${Object.keys(global.db.data.users).length}* Pengguna
+│⬡ *${conn.blocklist.length}* Terblock
+│⬡ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+│⬡ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┬
+├━━━━━━━━━━━━━━━━┈─⋆
+│ ▸ *Author :* LanXzy    ?
+┴ ▸ *Owner :* LynXz      ?
+✧
+┬ 📌 𝗣𝗶𝗻𝗻𝗲𝗱 :
+│ Tolong jangan dispam ya biar ga delay
+╰━━━━━━━━━━━━━━━━┈─◂',
   buttonText: tmb,
   sections
 }
