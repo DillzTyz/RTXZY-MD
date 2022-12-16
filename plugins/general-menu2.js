@@ -37,6 +37,7 @@ let tags = {
   'stalk': 'MENU STALK',
   'shortlink': 'SHORT LINK',
   'tools': 'MENU TOOLS',
+  'jadibot': 'JADIBOT',
   'vote': 'MENU VOTING',
   'nsfw': 'NSFW MENU', 
   'asupan': 'ASUPAN MENU', 
