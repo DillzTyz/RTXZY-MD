@@ -27,6 +27,7 @@ Agar terap bisa di gunakan dan tidak ada kendala seperti
         {title: `Speed[⚡]`, rowId: `#speed `},//, description: ``},
         {title: `List Texpro Maker[📝]`, rowId: `#textpro `},//, description: ``},
         {title: `Info[🛠️]`, rowId: `#info `},//, description: ``},
+        {title: `Jadibot[🤖]`, rowId: `.jadibot `},//, description: ``},
         {title: `Creator[👤]`, rowId: `#owner `},//, description: ``},
         ]
  } ]
