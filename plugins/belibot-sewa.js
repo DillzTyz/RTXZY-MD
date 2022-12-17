@@ -15,13 +15,13 @@ let gh = 'https://github.com/LynnXzy'
 'previewType':'pdf',
 'title':'Follow Github Gua',
 'body':'©Lynn',
-'thumbnail':await(await fetch('https://telegra.ph/file/f4063ab3071f5c4af765a.png')).buffer(),
+'thumbnail':await(await fetch('https://telegra.ph/file/98acd555a1295654da088.jpg')).buffer(),
 'sourceUrl':gh}},
-'caption':'Hi, Silahkan pilih opsi di bawah ini.\n*Payment*\n\n*x* Digi: 60149431385\n*x* Maxis: 60147675746',
+'caption':'Hi, Silahkan pilih opsi di bawah ini.\n*Payment*\n\n*x* 📮Digi: 60149431385\n*x* 📮Maxis: 60147675746',
 'footer':'©Lynn',
 'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'ᴍᴇɴᴜ'},'type':1},
-{'buttonId':'.donasi','buttonText':{'displayText':'ᴅᴏɴᴀsɪ'},'type':1}
+{'buttonId':'.menu','buttonText':{'displayText':'📄ᴍᴇɴᴜ'},'type':1},
+{'buttonId':'.donasi','buttonText':{'displayText':'💰ᴅᴏɴᴀsɪ'},'type':1}
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
