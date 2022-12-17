@@ -9,9 +9,10 @@ module.exports = {
 		while (levelling.canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 
 		if (before !== user.level) {
-			let chating = `Congratulations, you have leveled up!
-*${before}* -> *${user.level}*
-Use *.profile* to check`.trim()
+			let chating = `🎉Alhamdulillah level mu naik!
+📮LEVEL SEBELUMNYA : *${before}* 
+✨LEVEL SEKARANG : *${user.level}*
+Ketik *.profile* untuk mengecek`.trim()
 			m.reply(chating)
 			console.log(color(chating, 'pink'))
 		}
