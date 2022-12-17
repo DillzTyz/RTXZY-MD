@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
   let { title, description, thumbnail, videoId, durationH, durationS, viewH, publishedTime } = vid
   let url = 'https://www.youtube.com/watch?v=' + videoId
   let ytLink = `https://botcahx2.ddns.net/?url=${url}&filter=audioonly&quality=highestaudio&contenttype=audio/mpeg`
-  let capt = `⭔ 📃Title: ${title}\n\n⭔ ⏲️Published: ${publishedTime}\n⭔ ⏳Duration: ${durationH}\n⭔ 👀Views: ${viewH}\n⭔ 📎Description: ${description}\n⭔ Url:  ${url}`
+  let capt = `⭔ 📃Title: ${title}\n\n⭔ ⏲️Published: ${publishedTime}\n⭔ ⏳Duration: ${durationH}\n⭔ 👀Views: ${viewH}\n⭔ 💌Description: ${description}\n⭔ 📎Url:  ${url}`
   let buttons = [{ buttonText: { displayText: 'Video📽️' }, buttonId: `${usedPrefix}ytv ${url}` }]
   let msg = await conn.sendMessage(m.chat, { image: { url: thumbnail }, caption: capt, footer: '_Audio sedang diproses..._', buttons }, { quoted: m })
  if (durationS > 4000) return conn.sendMessage(m.chat, { text: `*Download:* ${await shortUrl(ytLink)}\n\n_Durasi terlalu panjang download manual saja lewat link diatas..._` }, { quoted: msg })
