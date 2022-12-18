@@ -4,13 +4,18 @@ let handler = async (m, { conn }) => {
     let uptime = clockString(_uptime)
 
     let tio = `
-Mode : ${global.opts['self'] ? 'Self' : 'publik'}\nAktif selama ${uptime}\n${Object.keys(global.db.data.users).length} Pengguna\n${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned\nFitur Sering Digunakan : ${Object.entries(db.data.stats).length}\n\njika Mode Self
-maka bot sedang tidur atau sedang dalam mode maintenance
+┏━━〔 𝐒𝐓𝐀𝐓𝐔𝐒 〕━⬣
+┃⬡ ⏲️𝘼𝙠𝙩𝙞𝙛 𝙎𝙚𝙡𝙖𝙢𝙖 :  _*${uptime}*_
+┃⬡ 💌𝙈𝙤𝙙𝙚 : _*${global.opts['self'] ? 'Self' : 'publik'}*_
+┃⬡ 👤𝙋𝙚𝙣𝙜𝙜𝙪𝙣𝙖 : _*${Object.keys(global.db.data.users).length}*_ 
+┃⬡ 🚫 𝙋𝙚𝙣𝙜𝙜𝙪𝙣𝙖 𝙏𝙚𝙧𝙗𝙖𝙣𝙣𝙚𝙙 : _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_
+┗━━━━━━━━⬣\n\njika Mode Self
+maka bot sedang off atau sedang dalam mode maintenance
 
 jika Mode Public
 maka bot sedang online dan bisa di pakai
     `.trim()
-conn.send2But(m.chat, tio, wm, 'Speed', '.speed', 'Back', '.menu',m)
+conn.send2But(m.chat, tio, wm, 'Speed⚡', '.speed', 'Back📄', '.menu',m)
 conn.reply(tio)
 }
 handler.help = ['mode']
