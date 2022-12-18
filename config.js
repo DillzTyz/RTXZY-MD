@@ -65,7 +65,8 @@ global.APIs = { // API Prefix
   tio: 'https://botcahx.ddns.net', 
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
   rey: 'https://sekha.me',
-  males: 'https://malesin.xyz'
+  males: 'https://malesin.xyz',
+  tio: 'http://api.tiodevhost.my.id', 
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
