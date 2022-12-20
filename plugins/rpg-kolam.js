@@ -1,6 +1,5 @@
 let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn }) => {
-	if (!db.data.chats[m.chat].rpg && m.isGroup) throw 'Feature Rpg Dimatikan Di grup ini\nKetik *!on* *rpg* untuk mengaktifkan fitur'
 
 let name = global.db.data.users[m.sender].name
 let level = global.db.data.users[m.sender].level
