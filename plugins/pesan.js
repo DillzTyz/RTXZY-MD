@@ -16,7 +16,7 @@ let [number, pesan] = text.split `|`
     let logs = `[ ✔️ ] Berhasil mengirim pesan wa ke nomor wa.me/${korban}`
     conn.reply(m.chat, logs, m)
 }
-handler.command = /^(pesan|chat)$/i
+handler.command = /^(pesan|chat|menfess)$/i
 handler.rowner = false
 handler.limit = false
 handler.premium = false
