@@ -8,9 +8,10 @@ if (!args[0].match(/tiktok/gi)) throw `❎ Periksa apakah tautannya dari tiktok`
 try {
     let p = await fg.tiktok(args[0]) 
     let te = `
-┌─⊷ SERVER 1
-▢ *Username:* ${p.author}
-▢ *Descripción:* ${p.title}
+┌─⊷ SERVER 1 
+▢ *Username👤:* ${p.author}
+▢ *Descripción📝:* ${p.title}
+▢ _*📮Hasil Pencarian*_
 └───────────`
     
     conn.sendFile(m.chat, p.nowm, 'tt.mp4', te, m)
