@@ -11,7 +11,7 @@ try {
 ┌─⊷ SERVER 1 
 ▢ *Username👤:* ${p.author}
 ▢ *Descripción📝:* ${p.title}
-▢ _*📮Hasil Pencarian*_
+▢ _*Hasil Pencarian🔎*_
 └───────────`
     
     conn.sendFile(m.chat, p.nowm, 'tt.mp4', te, m)
