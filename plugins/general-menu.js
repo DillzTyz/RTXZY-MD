@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
     let ar = ['list', 'menu']
     let title = `© *𝑩𝒐𝒕𝒛 𝑩𝒚 𝑳𝒚𝒏𝒏* 🌱
-Owner : wa.me/60189830350`
+Owner : wa.me/60189830350\nRuntime : ${uptime}`
     let tmb = `CLICK HERE ⎙`
     const sections = [ {
 	title: `Aktif Selama ${uptime} || Waktu ${time} WIB`,
