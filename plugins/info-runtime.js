@@ -6,8 +6,8 @@ let handler = async (m, { conn }) => {
 m.reply(`
 *───「 RUNTIME BOT 」───*
 
-Runtime : ${uptime} 
-Waktu : ${time}
+⏲️Runtime : ${uptime} 
+⏰Waktu : ${time}
 
     `)
 }
